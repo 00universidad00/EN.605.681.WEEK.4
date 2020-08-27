@@ -124,6 +124,8 @@ public class P3Test {
         final int NEW_ENGINES = 4;
         // test passing negative number
         final int NEGATIVE_ENGINE = -10;
+        // default value for engines
+        final int DEFAULT_ENGINES = 2;
 
         // create a new p3
         P3 p3 = new P3("Test p3", 10, "Test Length", ORIGINAL_ENGINES);
@@ -135,6 +137,10 @@ public class P3Test {
         // test that engines updates when calling set length
         p3.setEngines(NEW_ENGINES);
         assertEquals(NEW_ENGINES, p3.getEngines());
+        // create a new p3 with negative engines
+        P3 p3b = new P3("Test p3", 10, "Test Length", NEGATIVE_ENGINE);
+        // test that p3 has the engines passed in the constructor
+        assertEquals(DEFAULT_ENGINES, p3b.getEngines());
     }
 
     @Test

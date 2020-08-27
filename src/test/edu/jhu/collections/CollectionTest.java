@@ -45,10 +45,10 @@ public class CollectionTest {
         // create new array to store ships
         ArrayList<Ship> ships = new ArrayList<>();
         // create new ships and add them to the list
-        ships.add(new Destroyer("Destroyer 1", 10, null, 2));
+        ships.add(new Destroyer("Destroyer 1", 10, "Tyoe 1", 2));
         ships.add(new Destroyer("Destroyer 2", 10, "Type 2", 2));
         ships.add(new Destroyer("Destroyer 3", 10, "Type 3", 2));
-        ships.add(new Submarine("Sub 1", 10, null, 2));
+        ships.add(new Submarine("Sub 1", 10, "Type 1", 2));
         ships.add(new Submarine("Sub 2", 10, "Type 2", 2));
         ships.add(new Submarine("Sub 3", 10, "Type 3", 2));
         // check that list is not empty
@@ -62,15 +62,15 @@ public class CollectionTest {
         // create new array to store contacts
         ArrayList<Contact> contacts = new ArrayList<>();
         // create new ships and add them to the list
-        contacts.add(new Destroyer("Destroyer 1", 10, null, 2));
-        contacts.add(new Destroyer("Destroyer 2", 10, "Type 2", 2));
-        contacts.add(new Destroyer("Destroyer 3", 10, "Type 3", 2));
-        contacts.add(new Submarine("Sub 1", 10, null, 2));
-        contacts.add(new Submarine("Sub 2", 10, "Type 2", 2));
-        contacts.add(new Submarine("Sub 3", 10, "Type 3", 2));
-        contacts.add(new P3("P3 1", 10, null, 2));
-        contacts.add(new P3("P3 2", 10, "Type 2", 2));
-        contacts.add(new P3("P3 3", 10, "Type 3", 2));
+        contacts.add(new Destroyer("Destroyer 1", 10, "DT1", 2));
+        contacts.add(new Destroyer("Destroyer 2", 10, "DT2", 2));
+        contacts.add(new Destroyer("Destroyer 3", 10, "DT3", 2));
+        contacts.add(new Submarine("Sub 1", 10, "ST1", 2));
+        contacts.add(new Submarine("Sub 2", 10, "ST2", 2));
+        contacts.add(new Submarine("Sub 3", 10, "ST3", 2));
+        contacts.add(new P3("P3 1", 10, "PT1", 2));
+        contacts.add(new P3("P3 2", 10, "PT2", 2));
+        contacts.add(new P3("P3 3", 10, "PT3", 2));
         // check that list is not empty
         assertFalse(contacts.isEmpty());
         // print list

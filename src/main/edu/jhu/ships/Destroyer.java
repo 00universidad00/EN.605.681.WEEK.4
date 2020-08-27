@@ -22,7 +22,7 @@ public class Destroyer extends Ship {
                 // if type is null use default type
                 Contact.ifNullStringUseDefault(type, "Generic Type")
         );
-        this.setMissiles(missiles);
+        this.setMissiles(Contact.isWholeNumber(missiles).orElse(DEFAULT_MISSILE_NUMBER));
     }
 
     /**

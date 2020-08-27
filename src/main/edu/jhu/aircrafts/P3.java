@@ -19,11 +19,13 @@ public class P3 extends Aircraft {
         super(
                 // if name is null use default name
                 Contact.ifNullStringUseDefault(name, "Generic P3"),
-                length,
+                // if length is negative use default value
+                Contact.isWholeNumber(length).orElse(DEFAULT_LENGTH),
                 // if type is null use default type
-                Contact.ifNullStringUseDefault(type, "Generic Type")
+                Contact.ifNullStringUseDefault(type, GENERIC_TYPE)
         );
-        this.setEngines(engines);
+        //, if value is invalid set engines to 2
+        this.setEngines(Contact.isWholeNumber(engines).orElse(2));
     }
 
     /**
@@ -41,7 +43,7 @@ public class P3 extends Aircraft {
      * @param engines engines number as integer
      */
     public void setEngines(int engines) {
-        // Validate integer using interface helper, if value is invalid set engines to 2
+        // Validate integer using interface helper
         this.engines = Contact.isWholeNumber(engines).orElse(getEngines());
     }
 

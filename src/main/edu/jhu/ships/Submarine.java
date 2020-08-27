@@ -22,7 +22,7 @@ public class Submarine extends Ship {
                 // if type is null use default type
                 Contact.ifNullStringUseDefault(type, "Generic Type")
         );
-        this.setTorpedoes(torpedoes);
+        this.setTorpedoes(Contact.isWholeNumber(torpedoes).orElse(DEFAULT_TORPEDOES_NUMBER));
     }
 
     /**
@@ -61,7 +61,7 @@ public class Submarine extends Ship {
      */
     @Override
     public String toString() {
-        return String.format("Submarine {Name: %s, Type: %s, Length: %d, Speed: %d, Missiles: %d}",
+        return String.format("Submarine {Name: %s, Type: %s, Length: %d, Speed: %d, Torpedoes: %d}",
                 getName(), getType(), getLength(), getSpeed(), getTorpedoes());
     }
 }

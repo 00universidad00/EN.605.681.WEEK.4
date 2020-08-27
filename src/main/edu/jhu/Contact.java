@@ -7,6 +7,10 @@ public interface Contact {
 
     // helps set the default speed
     int DEFAULT_SPEED = 0;
+    // helps set the default length
+    int DEFAULT_LENGTH = 1;
+    // helps set generic type
+    String GENERIC_TYPE = "Generic Type";
 
     /**
      * Method used to test if string is a whole number
