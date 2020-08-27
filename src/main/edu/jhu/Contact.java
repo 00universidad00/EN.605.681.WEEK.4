@@ -98,7 +98,7 @@ public interface Contact {
      */
     static String ifNullStringUseDefault(String string, String defaultValue) {
         return Optional.ofNullable(string).or(() -> {
-            new NullPointerException().printStackTrace();
+//            new NullPointerException().printStackTrace();
             System.out.println("Null value detected! Verify your code.");
             System.out.println("Replacing null with: " + defaultValue);
             return Optional.empty();
