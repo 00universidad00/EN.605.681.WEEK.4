@@ -2,6 +2,10 @@ package main.edu.jhu.aircrafts;
 
 import main.edu.jhu.Contact;
 
+/**
+ * @author Eleazar Miranda
+ */
+
 public class P3 extends Aircraft {
     // class members
     private int engines;

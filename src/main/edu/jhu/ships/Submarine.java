@@ -2,6 +2,10 @@ package main.edu.jhu.ships;
 
 import main.edu.jhu.Contact;
 
+/**
+ * @author Eleazar Miranda
+ */
+
 public class Submarine extends Ship {
     private final int DEFAULT_TORPEDOES_NUMBER = 2;
     // class attributes

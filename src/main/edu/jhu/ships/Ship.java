@@ -2,6 +2,10 @@ package main.edu.jhu.ships;
 
 import main.edu.jhu.Contact;
 
+/**
+ * @author Eleazar Miranda
+ */
+
 public abstract class Ship implements Contact {
     // class members
     private String name;

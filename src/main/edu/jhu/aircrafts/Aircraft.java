@@ -2,7 +2,9 @@ package main.edu.jhu.aircrafts;
 
 import main.edu.jhu.Contact;
 
-import java.util.Optional;
+/**
+ * @author Eleazar Miranda
+ */
 
 abstract class Aircraft implements Contact {
     // class members

@@ -2,6 +2,10 @@ package main.edu.jhu.ships;
 
 import main.edu.jhu.Contact;
 
+/**
+ * @author Eleazar Miranda
+ */
+
 public class Destroyer extends Ship {
     // class members
     private int missiles;

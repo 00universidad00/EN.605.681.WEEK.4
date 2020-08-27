@@ -3,6 +3,10 @@ package main.edu.jhu;
 import java.util.Optional;
 import java.util.regex.Pattern;
 
+/**
+ * @author Eleazar Miranda
+ */
+
 public interface Contact {
 
     // helps set the default speed
